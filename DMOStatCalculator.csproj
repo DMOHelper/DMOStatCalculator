@@ -4,11 +4,47 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.0.8.8553</AssemblyVersion>
+    <FileVersion>1.0.8.8553</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="csvResources\accessoryPresets.csv" />
+    <None Remove="csvResources\decks.csv" />
+    <None Remove="csvResources\digimonPresets.csv" />
+    <None Remove="csvResources\statformula.csv" />
+    <None Remove="csvResources\tamers.csv" />
+    <None Remove="csvResources\tamerSkills.csv" />
+    <None Remove="csvResources\titles.csv" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.5" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="csvResources\accessoryPresets.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\decks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\digimonPresets.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\statformula.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\tamers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\tamerSkills.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="csvResources\titles.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
